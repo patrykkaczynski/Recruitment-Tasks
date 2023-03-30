@@ -1,4 +1,4 @@
-# Pokemons - Windows Forms application + SQL
+# CLI Back-End Task
 
 
 ## Table of Contents

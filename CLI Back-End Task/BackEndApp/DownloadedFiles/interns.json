@@ -1,0 +1,44 @@
+{
+   "interns": [
+      {
+         "id": 1,
+         "age": 20,
+         "name": "Bird Ramsey",
+         "email": "birdramsey@nimon.com",
+         "internshipStart": "2021-07-01T00:00+00Z",
+         "internshipEnd": "2021-09-30T00:00+00Z"
+      },
+      {
+         "id": 2,
+         "age": 21,
+         "name": "Lillian Burgess",
+         "email": "lillianburgess@luxuria.com",
+         "internshipStart": "2021-07-01T00:00+00Z",
+         "internshipEnd": "2021-09-30T00:00+00Z"
+      },
+      {
+         "id": 3,
+         "age": 22,
+         "name": "Kristie Cole",
+         "email": "kristiecole@quadeebo.com",
+         "internshipStart": "2020-07-01T00:00+00Z",
+         "internshipEnd": "2020-09-30T00:00+00Z"
+      },
+      {
+         "id": 4,
+         "age": 23,
+         "name": "Leonor Cross",
+         "email": "leonorcross@gronk.com",
+         "internshipStart": "2020-07-01T00:00+00Z",
+         "internshipEnd": "2020-09-30T00:00+00Z"
+      },
+      {
+         "id": 5,
+         "age": 24,
+         "name": "Marsh Mccall",
+         "email": "marshmccall@ultrimax.com",
+         "internshipStart": "2020-07-01T00:00+00Z",
+         "internshipEnd": "2020-09-30T00:00+00Z"
+      }
+   ]
+}

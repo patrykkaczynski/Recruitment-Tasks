@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>interns.exe</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <ProjectName>BackEndApp</ProjectName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.4.0-alpha.22272.1" />
+  </ItemGroup>
+  
+  <Target Name="InstallTool" DependsOnTargets="Pack">
+    <Exec Command="dotnet tool uninstall --global $(ProjectName)" IgnoreExitCode="true" />
+    <Exec Command="dotnet tool install --global --add-source $(PackageOutputPath) $(ProjectName)" />
+    <Exec Command="$(ToolCommandName) --help" />
+  </Target>
+
+</Project>

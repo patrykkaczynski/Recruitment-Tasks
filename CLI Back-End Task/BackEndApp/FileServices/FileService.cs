@@ -117,6 +117,11 @@ namespace BackEndApp.FileServices
                 result = _listInterns.Where(x => x.Age < _ageLt).Count();
             }
 
+            if (_selectedCommand == "count")
+            {
+                result = _listInterns.Count();
+            }
+
             return result;
         }
    

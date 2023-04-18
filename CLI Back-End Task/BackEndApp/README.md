@@ -9,7 +9,7 @@
 
 
 ## General Information
-Click [here](https://github.com/fortedigital/Back-End-Internship-T) for more details concerning this task.
+Click [here](https://github.com/fortedigital/Back-End-Internship-Task) for more details concerning this task.
 
 ## Technologies used
 - C#
@@ -23,5 +23,7 @@ Click [here](https://github.com/fortedigital/Back-End-Internship-T) for more det
 
 # Setup
 - git clone [repository] or download ZIP and unzip this file
-- open the project in Visual Studio
-- press F5 on keyboard to run a program
+- go to the path where BackEndApp.csproj is located
+- open cmd for this path
+- type `dotnet build -t:InstallTool`
+- you can use commands according to [here](https://github.com/fortedigital/Back-End-Internship-Task)
